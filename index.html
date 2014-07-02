@@ -67,6 +67,13 @@
   end
 end
 </code></pre>
+
+<h2>
+<a name="speed-up-factory-girl-tests-by-using-unsecure-passwords-in-test-environment" class="anchor" href="#speed-up-factory-girl-tests-by-using-unsecure-passwords-in-test-environment"><span class="octicon octicon-link"></span></a>Speed up Factory Girl tests by using unsecure passwords in test environment</h2>
+
+<pre><code>config/environments/test.rb
+ActiveModel::SecurePassword.min_cost = true
+</code></pre>
       </section>
     </div>
 
